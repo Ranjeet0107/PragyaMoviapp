@@ -94,7 +94,7 @@ fetch(json_url).then(Response => Response.json())
         }
     });
     let series =document.getElementById('series');
-    let movies = document.getElementById('movie');
+    let movies = document.getElementById('movies');
 
     series.addEventListener('click',()=>{
         cards.innerHTML= ' ';
@@ -130,11 +130,11 @@ fetch(json_url).then(Response => Response.json())
    movies.addEventListener('click',()=>{
     cards.innerHTML= ' ';
 
-    let movies_array = data.filter(ele => {
-        return ele.type === "movies";
+    let movie_array = data.filter(ele => {
+        return ele.type === "movie";
     });
     
-movies_array.forEach((ele, i) => {
+movie_array.forEach((ele, i) => {
 let { name, imdb, date, sposter, bposter, genre , url } = ele;
 let card = document.createElement('a');
 card.classList.add('card');
