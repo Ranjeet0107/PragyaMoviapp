@@ -64,7 +64,7 @@ header::before {
     justify-content: center;
  }
  header nav .logo_ul img{
-    width: 50px;
+    width: 100px;
  }
 
  header nav .logo_ul ul {
@@ -72,7 +72,7 @@ header::before {
     align-items: center;
     justify-content: center;
     list-style: none;
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
     left: 41px;
 
